@@ -1,0 +1,509 @@
+.container {
+    display: flex; 
+    flex-direction:row ;
+}
+
+.left {
+    width: 23vw; /* 25% of the viewport width */
+    position: fixed; /* Fix the left container in place */
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: black;
+    height: 100%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 20vw;
+    margin: 8px 5px 0px 2px;
+    border-radius: 5px;
+    padding: 17px;
+    justify-content: center;
+}
+
+.home ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-left: 8px;
+}
+
+.home ul li {
+    display: flex;
+    gap: 10px;
+    color: white;
+    justify-items: right;
+    width: 15px;
+    list-style: none;
+}
+
+.logo {
+    margin-bottom: 8px;
+}
+
+.library {
+    height: 72vh;
+    width: 20vw;
+    margin-left: 4px;
+    border-radius: 5px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.library .list {
+    width: 15px;
+}
+
+.lib {
+    display: flex;
+    gap: 10px;
+    filter: invert(1);
+    align-items: center;
+    margin-left: 10px;
+    
+}
+
+.lib .close {
+    margin-left: 140px;
+    width: 15px;
+    rotate: 135deg;
+}
+
+.footer {
+    display: flex;
+    
+    gap: 13px;
+    color: white;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    margin-top: 13vh;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin-left: 13px;
+   
+}
+
+.footer a:hover {
+    color: rgb(154, 151, 151);
+}
+
+/* The Right Section */
+.right {
+    
+    width: 77vw; /* 75% of the viewport width */
+    margin-left: 22.5vw; /* Offset the right section so it starts after the left section */
+    color: white;
+    padding: 8px 5px; /* Add padding to the right section for spacing */
+    z-index: 10;
+    background-color: black;
+    height: 109vh;
+    position: relative;
+}
+
+.header {
+    background-color: #121212;
+    padding: 10px;
+    height: 97.3%;
+    
+    
+    
+    border-radius: 5px;
+    
+}
+
+.navn {
+    display: flex;
+   
+  padding: 2px;
+    flex-direction: row;
+    gap: 125vh;
+   
+    
+    
+    
+}
+
+/* Button box styling */
+.button {
+    
+    background-color: #121212;
+  
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Box shadow for the button box */
+    align-items: center; /* Align items in the center */
+    justify-content: center; /* Align buttons inside the box */
+}
+
+.button button {
+    background-color: #1DB954;
+    color: white;
+    border: none; /* Remove default button border */
+    padding: 10px 10px; /* Add padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.button button:hover {
+    background-color: #1ed760; /* Change color on hover */
+    transform: scale(1.03); /* Increase button size by 10% */
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+.navn div{
+    display: flex;
+    
+    
+    gap: 300px;
+}
+.spotifypaly{
+padding: 2px;
+
+}
+.cardcontainer {
+    
+    width: 100%; /* or use a specific width */
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row; /* Align the cards horizontally */
+    gap: 50px;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if the container is too small */
+}
+.card{
+    background-color: #2c2a2a;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.card img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.play {
+   
+height: 30px;
+width: 28px;
+border-radius: 60px;
+    z-index: 1; /* Ensures the play button stays on top */
+    color: #1DB954;
+    background-color: rgb(121, 201, 109) ;
+    
+    position: relative;
+    top: 200px;
+    
+}
+.play:hover{
+    background-color: rgb(50, 88, 44) ;
+    opacity: .9;
+}
+.card > .play1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.header {
+    background-color: #121212;
+    padding: 10px;
+    height: 100vh; /* Ensure the header takes full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.spotifyplay {
+    flex-grow: 1; /* This allows the .spotifyplay section to take available space */
+}
+
+.palybar {
+    margin-top: 240px; /* Add some space from the Spotify section */
+   
+    padding: 8px;
+    border-radius: 5px;
+    z-index: 1000;
+    background-color: #38bb66;
+   
+    
+    width: 156vh;
+}
+.songbuttons{
+    display: flex;
+    justify-content:center   ;
+    align-items: center;
+    gap: 10px;
+}
+.songlist{
+    font-size: 13px;
+    font-weight: 320;
+    display: flex;
+    
+    gap: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.songlist ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    
+}
+.songlist ul li{
+   display: flex;
+   gap: 25px;
+   cursor: pointer;
+   border: 1px solid whitesmoke;
+   padding: 8px;
+
+   border-radius: 4px;
+   
+}
+.playnow{
+    display: flex;
+   
+    gap: 2px;
+  
+   align-items: center;
+
+    
+}
+.palybar {
+    position: fixed;
+    bottom: 0;
+   margin-left: 24%;
+    
+    box-sizing: border-box;
+  
+    padding: 10px 15px 20px 10px;
+    margin-bottom: 10px;
+   
+  }
+  .seekbar{
+    height: 2px;
+    width: 98%;
+    border: 2px solid rgb(54, 52, 52);
+    z-index: 14;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 31px;
+    fill: rgb(54, 52, 52);
+
+  }
+  .circle {
+    width: 12px; /* Increased size */
+    height: 12px; /* Increased size */
+    background-color: #000000; /* Set background color */
+    border-radius: 50%; 
+    
+    margin-bottom: 24px;
+    position: absolute;
+    bottom: -29px;
+    left: 0%;
+    transition: left 0.5s;
+  }
+  .close{
+    width: 30px;
+    margin-left: 12vw;
+  }
+ 
+  /* Initial style */
+#play {
+    transition: filter 0.3s ease; /* Smooth transition for filter */
+}
+
+/* When the play button is active, the filter will be inverted */
+#play.inverted {
+    filter: invert(1);
+}
+.seekbar,.circle {
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+
+
+@media screen and (max-width: 1501px) {
+   body{
+ margin: 0;
+ padding: 0;
+   max-width: fit-content;
+   max-height: fit-content;
+   }
+   .left{
+    height: 103vh;
+   }
+   .right{
+    width: 90vw;
+    height: 100%;
+   }
+   .button{
+    display: flex;
+    flex-direction: row;
+   }
+   .palybar{
+    position: absolute;
+    width: 70vw;
+   }
+   .button{
+    position: absolute;
+    margin-left: 700px;
+   }
+   .close{
+    display: none;
+   }
+  }
+  @media screen and (max-width: 1110px) {
+    body{
+   
+    max-width: fit-content;
+    max-height: fit-content;
+    }
+    .button{
+        position: absolute;
+        margin-left: 600px;
+       }
+   }
+
+   @media screen and (max-width: 450px) {
+  body{
+   height: fit-content;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+      max-width: fit-content;
+      max-height: fit-content;
+      }
+  .button{
+    position: absolute;
+    margin-left: 265px;
+  }
+  .palybar{
+    position: absolute;
+    left: -97px;
+    width: 95%;
+    position: fixed;
+  }
+  .seekbar{
+    position: absolute;
+    left: -1px;
+  }
+  .library{
+    height: 71vh;
+  }
+  .songinfo{
+    font-size: 2px;
+  }
+   }
+
+   @media screen and (max-width: 1400px) {
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 1px;
+        
+    }
+   
+   
+    .left{
+  
+    position: absolute;
+    left: -120%;
+    transition: all ;
+    z-index: 100;
+    width: 378px;
+    height: 91.3%;
+    border-radius: 5px;
+    transition: ease-in-out .5s;
+
+    
+   }
+   .library,.home{
+    width: 333px;
+   }
+   .right{
+    position: absolute;
+    left: -23%;
+    width: 100%;
+    
+   }
+   .header{
+    height: 96vh;
+   }
+   .palybar{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    width: 97%;
+    z-index: 300;
+   }
+   .hamburger{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+   }
+   .home{
+    height: 11vh;
+   }
+   
+   .close{
+    margin-left: 200px;
+   
+   }
+   .palybar{
+    width: 95%;
+   }
+
+   }
+   @media (max-width:391px) and (min-width:84px) {
+    .palybar {
+        position: absolute;
+        right: 30px;
+        bottom: 10px;
+        width: 97%;
+    }
+
+    .button {
+        position: absolute;
+        left: -67px;
+    }
+
+    .palybar {
+        margin-top: 20px;
+        position: fixed;
+        z-index: 300;
+        width: 90%;
+     padding-left: 10px;
+
+
+    }
+
+    .right {
+        height: 110vh;
+    }
+
+    .header {
+        height: 90%;
+    }
+}
+
+
+
+  
+  

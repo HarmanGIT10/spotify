@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", serif;
+    
+    
+    
+}
+
+.flex{
+    display: flex;
+}   
+.justifycontent{
+    justify-content: center;
+}
+.aligncenter{
+    align-items: center;
+}
+.border{
+    border: 2px solid darkgreen;
+    margin: 4px;
+    
+}
+.invert{
+    filter: invert(1);
+}
+.backg{
+    background-color: #121212;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 1px;
+    
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1DB954;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1ed760;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
+.cur{
+    cursor: pointer;
+}
+
+
+  
+  .size{
+    width: 15px;
+    height: 15px;
+  }
+  
+  
